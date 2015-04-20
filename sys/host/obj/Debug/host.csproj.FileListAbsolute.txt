@@ -1,0 +1,15 @@
+C:\github\existence\sys\host\obj\Debug\host.csprojResolveAssemblyReference.cache
+C:\github\existence\sys\host\bin\Debug\host.exe.config
+C:\github\existence\sys\host\bin\Debug\host.exe
+C:\github\existence\sys\host\bin\Debug\host.pdb
+C:\github\existence\sys\host\bin\Debug\Nancy.dll
+C:\github\existence\sys\host\bin\Debug\Nancy.Hosting.Self.dll
+C:\github\existence\sys\host\bin\Debug\Newtonsoft.Json.dll
+C:\github\existence\sys\host\bin\Debug\StackExchange.Redis.dll
+C:\github\existence\sys\host\bin\Debug\Nancy.xml
+C:\github\existence\sys\host\bin\Debug\Nancy.Hosting.Self.xml
+C:\github\existence\sys\host\bin\Debug\Newtonsoft.Json.xml
+C:\github\existence\sys\host\bin\Debug\StackExchange.Redis.pdb
+C:\github\existence\sys\host\bin\Debug\StackExchange.Redis.xml
+C:\github\existence\sys\host\obj\Debug\host.exe
+C:\github\existence\sys\host\obj\Debug\host.pdb
