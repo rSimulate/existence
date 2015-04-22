@@ -27,7 +27,6 @@ namespace host
         private IStorage storage = null;
         private ILog log = null;
         private IAuthentication auth = null;
-       
 
         #region [ Functions ]
         /// <summary>
@@ -46,10 +45,13 @@ namespace host
         #endregion
 
         #region [ Constructor ]
-        public ApiModule()
+        public ApiModule(ILog _log, IStorage _storage, IAuthentication _auth)
             : base(ConfigurationManager.AppSettings["base_route"])
         {
             string api_route = "/{path*}";
+            this.storage = _storage;
+            this.log = _log;
+            this.auth = _auth;
 
             Get[api_route] = _ =>
             {

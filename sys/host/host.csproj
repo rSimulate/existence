@@ -56,9 +56,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApiModule.cs" />
+    <Compile Include="Auth\DefaultAuthentication.cs" />
+    <Compile Include="Auth\IAuthentication.cs" />
     <Compile Include="Extensions.cs" />
+    <Compile Include="Log\DefaultLog.cs" />
+    <Compile Include="Log\ILog.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Store\DefaultStorage.cs" />
+    <Compile Include="Store\IStorage.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">
