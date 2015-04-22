@@ -12,10 +12,13 @@ namespace host
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Starting host");
             string host_path = ConfigurationManager.AppSettings["host_path"];
+            Console.WriteLine("host path: {0}",host_path);
 
             using (var host = new NancyHost(new Uri(host_path)))
             {
+                Console.WriteLine("Begin start Host");
                 host.Start();
                 Console.ReadLine();
             }
