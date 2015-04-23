@@ -68,9 +68,7 @@ namespace host
 
                     if (this.auth.Authorized(Request))
                     {
-                        var results = this.storage.Query(resource_path)
-                                          .Where(r => r.StartsWith(path))
-                                          .OrderBy(r => r);
+                        var results = this.storage.Query(resource_path);
                      
                         if (results.Any())
                         {
