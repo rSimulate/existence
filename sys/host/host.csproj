@@ -55,7 +55,9 @@
     <Compile Include="ApiModule.cs" />
     <Compile Include="Auth\DefaultAuthentication.cs" />
     <Compile Include="Auth\IAuthentication.cs" />
+    <Compile Include="DefaultFactory.cs" />
     <Compile Include="Extensions.cs" />
+    <Compile Include="IFactory.cs" />
     <Compile Include="Log\DefaultLog.cs" />
     <Compile Include="Log\ILog.cs" />
     <Compile Include="Program.cs" />

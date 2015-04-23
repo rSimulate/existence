@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace host
@@ -20,8 +21,19 @@ namespace host
             {
                 Console.WriteLine("Begin start Host");
                 host.Start();
-                Console.WriteLine("Host is online.");
-                Console.ReadLine();
+
+                //Under mono if you daemonize a process a Console.ReadLine will cause an EOF 
+                //so we need to block another way
+                if (args.Any(s => s.Equals("-d", StringComparison.CurrentCultureIgnoreCase)))
+                {
+                    Thread.Sleep(Timeout.Infinite);
+                }
+                else
+                {
+                    Console.ReadKey();
+                }
+
+                host.Stop();  // stop hosting
             }
         }
     }

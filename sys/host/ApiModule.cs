@@ -24,6 +24,7 @@ namespace host
 
     public class ApiModule : NancyModule
     {
+        private IFactory factory = null;
         private IStorage storage = null;
         private ILog log = null;
         private IAuthentication auth = null;
@@ -45,13 +46,14 @@ namespace host
         #endregion
 
         #region [ Constructor ]
-        public ApiModule(ILog _log, IStorage _storage, IAuthentication _auth)
+        public ApiModule(IFactory _factory)
             : base(ConfigurationManager.AppSettings["base_route"])
         {
             string api_route = "/{path*}";
-            this.storage = _storage;
-            this.log = _log;
-            this.auth = _auth;
+            this.factory = _factory;
+            this.storage = this.factory.Storage();
+            this.log = this.factory.Log();
+            this.auth = this.factory.Auth();
 
             Get[api_route] = _ =>
             {
@@ -224,6 +226,8 @@ namespace host
         private dynamic Ok(Nancy.Request Request, Hashtable response_obj)
         {
             this.log.LogOk(Request);
+            response_obj.Add("date", DateTime.Now);
+
             return Response.AsJson(response_obj, HttpStatusCode.OK); 
         }
 
