@@ -16,8 +16,6 @@ namespace host
             string host_path = ConfigurationManager.AppSettings["host_path"];
             Console.WriteLine("host path: {0}",host_path);
 
-            AppDomain.CurrentDomain.FirstChanceException += CurrentDomain_FirstChanceException;
-
             using (var host = new NancyHost(new Uri(host_path)))
             {
                 Console.WriteLine("Begin start Host");
@@ -25,11 +23,6 @@ namespace host
                 Console.WriteLine("Host is online.");
                 Console.ReadLine();
             }
-        }
-
-        static void CurrentDomain_FirstChanceException(object sender, System.Runtime.ExceptionServices.FirstChanceExceptionEventArgs e)
-        {
-            Console.WriteLine("ERROR : {0}", e.Exception.Message);
         }
     }
 }
