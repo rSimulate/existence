@@ -102,7 +102,9 @@ namespace host
                 {
                     #region [ HTTP POST ]
                     Hashtable response_obj = new Hashtable();
-                    string resource_path = String.Format("{0}/{1}", ConfigurationManager.AppSettings["api.resource.path"], Request.Path.Replace("/", "_"));
+
+                    string resource_path = Request.Path;
+                    string storage_path = String.Format("{0}/{1}", ConfigurationManager.AppSettings["api.resource.path"], Request.Path.Replace("/", "_"));
 
                     if (this.storage.Exists(resource_path))
                     {
@@ -144,7 +146,8 @@ namespace host
                 {
                     #region [ HTTP PUT ]
                     Hashtable response_obj = new Hashtable();
-                    string resource_path = String.Format("{0}/{1}", ConfigurationManager.AppSettings["api.resource.path"], Request.Path.Replace("/", "_"));
+                    string resource_path = Request.Path;
+                    string storage_path = String.Format("{0}/{1}", ConfigurationManager.AppSettings["api.resource.path"], Request.Path.Replace("/", "_"));
 
                     if (this.storage.Exists(resource_path))
                     {
@@ -178,7 +181,8 @@ namespace host
                 {
                     #region [ HTTP DELETE ]
                     Hashtable response_obj = new Hashtable();
-                    string resource_path = String.Format("{0}/{1}", ConfigurationManager.AppSettings["api.resource.path"], Request.Path.Replace("/", "_"));
+                    string resource_path = Request.Path;
+                    string storage_path = String.Format("{0}/{1}", ConfigurationManager.AppSettings["api.resource.path"], Request.Path.Replace("/", "_"));
 
                     if (this.storage.Exists(resource_path))
                     {
