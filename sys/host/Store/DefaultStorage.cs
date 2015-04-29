@@ -9,7 +9,7 @@ namespace host.Store
 {
     public class DefaultStorage : IStorage
     {
-        public static ConcurrentDictionary<string, string> Resources = new ConcurrentDictionary<string, string>();
+        public static Dictionary<string, string> Resources = new Dictionary<string, string>();
 
 
         public IList<string> Query(string path)
@@ -38,7 +38,8 @@ namespace host.Store
             }
             else
             {
-                bool added = Resources.TryAdd(key, value);
+                bool added = true;
+                Resources.Add(key, value);
 
                 if (added)
                 {
@@ -63,7 +64,7 @@ namespace host.Store
             }
             else
             {
-                bool added = Resources.TryAdd(key, value);
+                bool added = true; Resources.Add(key, value);
 
                 if (added)
                 {
@@ -83,7 +84,7 @@ namespace host.Store
 
             if (this.Exists(key))
             {
-                Resources.TryRemove(key, out value);
+                Resources.Remove(key);
                 results.Add("action", "deleted");
             }
             else
