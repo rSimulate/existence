@@ -66,7 +66,7 @@ namespace host.Store
             {
                 database.Insert().Into("orbitresource")
                         .Set("path", resource_path)
-                        .Set("content", Request.Body.ReadAsString())
+                        .Set("content", Utilities.ReadAsString(Request.Body))
                         .Run();
                 result.Add("action", "created");
             }
@@ -84,7 +84,7 @@ namespace host.Store
             using (ODatabase database = new ODatabase("orbit"))
             {
                 database.Update().Class("orbitresource")
-                                 .Set("content", Request.Body.ReadAsString())
+                                 .Set("content", Utilities.ReadAsString(Request.Body))
                                  .Where("path")
                                  .Equals(resource_path.ToLower())
                                  .Run();

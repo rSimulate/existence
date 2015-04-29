@@ -29,7 +29,7 @@ namespace host.Store
         {
             Hashtable results = new Hashtable();
 
-            string value = Request.Body.ReadAsString();
+            string value = Utilities.ReadAsString(Request.Body);
             string key = Request.Path;
 
             if (this.Exists(key))
@@ -54,7 +54,7 @@ namespace host.Store
         {
             Hashtable results = new Hashtable();
 
-            string value = Request.Body.ReadAsString();
+            string value = Utilities.ReadAsString(Request.Body);
             string key = Request.Path;
 
             if (this.Exists(key))

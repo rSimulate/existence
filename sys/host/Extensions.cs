@@ -14,12 +14,12 @@ using System.Security.Cryptography;
 
 namespace host
 {
-    public static class RequestBodyExtensions
+    public class Utilities
     {
         public static Dictionary<String, String> EncryptionCache = new Dictionary<string, string>();
 
 
-        public static string ReadAsString(this RequestStream requestStream)
+        public static string ReadAsString(RequestStream requestStream)
         {
             using (var reader = new StreamReader(requestStream))
             {
@@ -28,7 +28,7 @@ namespace host
         }
 
         #region [ Encryptions ]
-        public static string sha256(this string password)
+        public static string sha256(string password)
         {
             SHA256Managed crypt = new SHA256Managed();
             string hash = String.Empty;
