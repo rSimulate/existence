@@ -69,13 +69,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\OrientDB-NET.binary\src\Orient\Orient.Client\Orient.Client.csproj">
-      <Project>{224db9ba-3ba5-4955-b147-e540e1f270da}</Project>
-      <Name>Orient.Client</Name>
-    </ProjectReference>
     <ProjectReference Include="..\core\core.csproj">
       <Project>{05e8d5db-77b3-4125-8474-3728fdfea54c}</Project>
       <Name>core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\depends\Orient.Client\Orient.Client.csproj">
+      <Project>{224db9ba-3ba5-4955-b147-e540e1f270da}</Project>
+      <Name>Orient.Client</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />

@@ -1,0 +1,17 @@
+C:\github\existence\sys\tests\bin\Debug\tests.dll
+C:\github\existence\sys\tests\bin\Debug\tests.pdb
+C:\github\existence\sys\tests\bin\Debug\host.exe
+C:\github\existence\sys\tests\bin\Debug\Nancy.dll
+C:\github\existence\sys\tests\bin\Debug\core.dll
+C:\github\existence\sys\tests\bin\Debug\Nancy.Hosting.Self.dll
+C:\github\existence\sys\tests\bin\Debug\Orient.Client.dll
+C:\github\existence\sys\tests\bin\Debug\Newtonsoft.Json.dll
+C:\github\existence\sys\tests\bin\Debug\host.pdb
+C:\github\existence\sys\tests\bin\Debug\Nancy.xml
+C:\github\existence\sys\tests\bin\Debug\core.pdb
+C:\github\existence\sys\tests\bin\Debug\Nancy.Hosting.Self.xml
+C:\github\existence\sys\tests\bin\Debug\Orient.Client.pdb
+C:\github\existence\sys\tests\bin\Debug\Newtonsoft.Json.xml
+C:\github\existence\sys\tests\obj\Debug\tests.csprojResolveAssemblyReference.cache
+C:\github\existence\sys\tests\obj\Debug\tests.dll
+C:\github\existence\sys\tests\obj\Debug\tests.pdb

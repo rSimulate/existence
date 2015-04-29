@@ -1,0 +1,4 @@
+C:\github\OrientDB-NET.binary\src\Orient\Orient.Client\bin\Debug\Orient.Client.dll
+C:\github\OrientDB-NET.binary\src\Orient\Orient.Client\bin\Debug\Orient.Client.pdb
+C:\github\OrientDB-NET.binary\src\Orient\Orient.Client\obj\Debug\Orient.Client.dll
+C:\github\OrientDB-NET.binary\src\Orient\Orient.Client\obj\Debug\Orient.Client.pdb
