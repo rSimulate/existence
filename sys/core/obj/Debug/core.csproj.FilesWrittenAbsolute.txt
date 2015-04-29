@@ -1,0 +1,4 @@
+/home/orbit/existence/sys/core/obj/Debug/.NETFramework,Version=v4.5.1.AssemblyAttribute.cs
+/home/orbit/existence/sys/core/obj/Debug/core.dll
+/home/orbit/existence/sys/core/bin/Debug/Nancy.dll
+/home/orbit/existence/sys/core/bin/Debug/core.dll

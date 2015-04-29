@@ -1,0 +1,9 @@
+/home/orbit/existence/sys/host/obj/Debug/.NETFramework,Version=v4.5.1.AssemblyAttribute.cs
+/home/orbit/existence/sys/host/obj/Debug/host.exe
+/home/orbit/existence/sys/host/bin/Debug/Mono.CSharp.dll
+/home/orbit/existence/sys/host/bin/Debug/Nancy.dll
+/home/orbit/existence/sys/host/bin/Debug/Nancy.Hosting.Self.dll
+/home/orbit/existence/sys/host/bin/Debug/Newtonsoft.Json.dll
+/home/orbit/existence/sys/host/bin/Debug/StackExchange.Redis.dll
+/home/orbit/existence/sys/host/bin/Debug/core.dll
+/home/orbit/existence/sys/host/bin/Debug/host.exe
