@@ -18,3 +18,4 @@ C:\github\existence\sys\host\bin\Debug\StackExchange.Redis.xml
 C:\github\existence\sys\host\obj\Debug\host.csprojResolveAssemblyReference.cache
 C:\github\existence\sys\host\obj\Debug\host.exe
 C:\github\existence\sys\host\obj\Debug\host.pdb
+C:\github\existence\sys\host\bin\Debug\Mono.Posix.dll
