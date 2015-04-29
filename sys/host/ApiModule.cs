@@ -108,7 +108,7 @@ namespace host
                     {
                         if (this.auth.Authorized(Request, resource_path))
                         {
-                            response_obj.Add("result",this.storage.Create(resource_path, Request));
+                            response_obj.Add("result",this.storage.Update(resource_path, Request));
                             return this.Created(Request, response_obj);
                         }
                         else

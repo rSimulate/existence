@@ -13,7 +13,7 @@ namespace host
     {
         public Store.IStorage Storage()
         {
-            return new DefaultStorage();
+            return new OrientDbStorage();
         }
 
         public Log.ILog Log()
