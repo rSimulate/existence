@@ -1,9 +1,0 @@
-D:\github\existence\sys\core\bin\Debug\core.dll
-D:\github\existence\sys\core\bin\Debug\core.pdb
-D:\github\existence\sys\core\obj\Debug\core.csprojResolveAssemblyReference.cache
-D:\github\existence\sys\core\obj\Debug\core.dll
-D:\github\existence\sys\core\obj\Debug\core.pdb
-C:\github\existence\sys\core\bin\Debug\core.dll
-C:\github\existence\sys\core\bin\Debug\core.pdb
-C:\github\existence\sys\core\obj\Debug\core.dll
-C:\github\existence\sys\core\obj\Debug\core.pdb
